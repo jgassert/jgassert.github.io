@@ -3,183 +3,117 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>jgassert webpage</title>
-    <style>
-        body {
-            margin: 0;
-            overflow: hidden;
-            background-color: #021526;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            position: relative;
-        }
-
-        .shape {
-            position: absolute;
-            width: 200px;
-            height: 50px;
-            background-color: #03346E;
-            opacity: .1;
-            animation: moveShape linear;
-            border-radius: 15px; /* Abgerundete Ecken */
-        }
-
-        @keyframes moveShape {
-            from {
-                transform: translateX(-250px);
-            }
-            to {
-                transform: translateX(calc(100vw + 100px));
-            }
-        }
-
-        @keyframes pulsate {
-            0%, 100% {
-                opacity: 1;
-            }
-            50% {
-                opacity: 0.5;
-            }
-        }
-
-        @keyframes explode {
-            0% {
-                transform: scale(1);
-                opacity: 1;
-            }
-            100% {
-                transform: scale(3);
-                opacity: 0;
-            }
-        }
-
-        /* .firework {
-            position: absolute;
-            width: 5px;
-            height: 5px;
-            background-color: #fff;
-            border-radius: 50%;
-            animation: explode 1s ease-out forwards;
-        } */
-
-        .name {
-            position: absolute;
-            color: #E2E2B6;
-            font-size: 3em;
-            font-weight: thin;
-            font-family: 'Helvetica Neue', sans-serif;
-            top: 40%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            animation: pulsate 12s infinite;
-
-        }
-        
-        .occupation {
-            font-size: 1.3em;
-            font-weight: bold;
-            opacity: 0.3;
-            color: #6EACDA;
-            font-family: 'Helvetica Neue', sans-serif;
-            top: 60%;
-            margin-top: 0px;
-        }
-        
-        /* Media Query für kleinere Bildschirme */
-    @media (max-height: 600px) {
-        .name {
-            top: 35%; /* Verschieben Sie das name Div etwas nach oben */
-        }
-        .occupation {
-            top: 65%; /* Verschieben Sie das occupation Div etwas nach unten */
-            margin-top: 25px;
-        }
-    }
-
-    @media (max-width: 600px) {
-        .name {
-            font-size: 6vw;
-        }
-        .occupation {
-            font-size: 2.6vw; /* Verschieben Sie das occupation Div etwas nach unten */
-        }
-    }
-       
-    </style>
+    <title>Julius Gassert - Astrophysics</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts for scientific/modern look -->
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;600&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-
-
-<div id="container"></div>
-<div class="name">Julius Gassert</div>
-<div class="occupation">Physics student @ 
-    <a href="https://www.lmu.de" target="_blank" style="color: inherit; text-decoration: none;">
-    LMU Munich
-    </a>
     
-    <br>
-    Researching @ 
-    <a href="https://www.usm.uni-muenchen.de" target="_blank" style="color: inherit; text-decoration: none;">
-    USM
-    </a>
+    <!-- Single Canvas for Stars + Merger Event -->
+    <canvas id="cosmos-canvas"></canvas>
 
-    <br>
-    Community Engagement @ 
-    <a href="https://www.grafingerjugendorchester.de" target="_blank" style="color: inherit; text-decoration: none;">
-    GJO
-    </a>
-</div>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-content">
+            <a href="#home" class="logo">🔭🪂🎺</a> 
+            <ul class="links">
+                <li><a href="#research">Research</a></li>
+                <li><a href="#music">Music</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
 
-<script>
-    function getRandomSize() {
-        const width = Math.random() * 200 + 50; // Breite zwischen 50px und 250px
-        const height = Math.random() * 100 + 20; // Höhe zwischen 20px und 120px
-        return { width, height };
-    }
+    <!-- Hero: The Animation plays behind this -->
+    <section id="home" class="hero-section">
+        <div class="hero-text">
+            <h1>Julius Gassert</h1>
+            <p class="tagline">Exploring the transient universe through <br>gravitational waves and multi-messenger astronomy.</p>
+        </div>
+    </section>
 
-    function createShape() {
-        const shape = document.createElement('div');
-        shape.className = 'shape';
+    <!-- Research Section -->
+    <section id="research" class="content-section">
+        <h2>Research</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Optical Transient/Gravitational Wave Follow-Up</h3>
+                <!-- <span class="tag">Parameter Estimation</span> -->
+                <p>Rapid follow-up campaigns for gravitational wave events and other transients to identify electromagnetic counterparts.</p>
+                <!-- Replace with <img> of your posterior plots later -->
+                <img src="imgs/S240615dg.png" alt="Pointing Plot of S240615dg" style="width: 100%; height: auto; border-radius: 8px;">
+                <!-- New Links Section -->
+                <div class="card-links">
+                    <p>Some publications that I have contributed to include:</p>
+                    <a href="https://iopscience.iop.org/article/10.3847/2041-8213/adfd49" target="_blank" class="icon-link">
+                        <span>📝 Kilonova Constraints for the LIGO/Virgo/KAGRA Neutron Star Merger Candidate S250206dm: GW-MMADS Observations</span>
+                    </a>
+                    <a href="https://arxiv.org/abs/2507.00357" target="_blank" class="icon-link">
+                        <span>📝 LIGO/Virgo/KAGRA neutron star merger candidate S250206dm: Zwicky Transient Facility observations</span>
+                    </a>
+                    <a href="https://arxiv.org/abs/2510.24620v1" class="icon-link">
+                        <span>📝 AT2025ulz and S250818k: Investigating early time observations of a subsolar mass gravitational-wave binary neutron star merger candidate</span>
+                    </a>
+                    <a href="https://arxiv.org/abs/2510.23723" class="icon-link">
+                        <span>📝 AT2025ulz and S250818k: Leveraging DESI spectroscopy in the hunt for a kilonova associated with a sub-solar mass gravitational wave candidate</span>
+                    </a>
+                    <a href="https://arxiv.org/abs/2512.10239" class="icon-link">
+                        <span>📝 EP250827b/SN 2025wkm: An X-ray Flash-Supernova Powered by a Central Engine and Circumstellar Interaction</span>
+                    </a>
+                    <p>We also publish some rapid updates about observations as <a href="https://gcn.nasa.gov/circulars?view=index&query=Julius+Gassert&startDate=&endDate=" target="_blank" class="icon-link">GCN Circulars</a>.</p>
+                </div>
+            </div>
 
-        // Set random position, size, and color
-        const { width, height } = getRandomSize();
-        shape.style.width = `${width}px`;
-        shape.style.height = `${height}px`;
-        shape.style.top = `${Math.random() * 100}vh`;
-        shape.style.left = '-100px'; // Start off-screen
+            <div class="card">
+                <h3>Gravitational Wave Transient Catalog Analysis</h3>
+                <p>Understanding the population properties of gravitational wave sources through comprehensive catalog analysis.</p>
+                <img src="imgs/UMAP_groups.png" alt="Groups in Gravitational Wave Transient Catalog" style="width: 100%; height: auto; border-radius: 8px;">
+            </div>
+        </div>
+    </section>
 
-        // Set random duration
-        const duration = Math.random() * 5 + 10;
-        shape.style.animationDuration = `${duration}s`;
+    <!-- Music Section -->
+    <section id="music" class="content-section">
+        <h2>Music & Community</h2>
+        <div class="grid">
+            <a href="https://grafingerjugendorchester.de" class="card wide" style="text-decoration: none; color: inherit;">
+                <h3>Grafinger Jugendorchester</h3>
+                <p>I serve as vice president (2. Vorstand) of the Grafinger Jugendorchester e.V., contributing to all sorts of organizational tasks, social media appearance, event planning and more. I actively play the trumpet and tenor drums.</p>
+            </a>
+        </div>
+    </section>
 
-        document.getElementById('container').appendChild(shape);
+    <section id="about" class="content-section">
+    <div class="about-container">
+        <div class="about-text">
+            <h2>About Me</h2>
+            <p>
+                I am a graduate student at Ludwig-Maximilians-Universität München pursing the <strong>AI in Physics</strong> Master program, currently conducting my Master's thesis research at the Carnegie Mellon University in Pittsburgh working with Prof. Antonella Palmese.
+            </p>
+            <p>
+                During my Bachelor's studies and the following years thereafter, I was involved with the optical follow-up of gravitational wave events and other transients as part of a group led by Prof. Daniel Grün at USM/LMU.
+            </p>
+            <p>
+                I am a generally curious and highly motivated individual interested in a broad range of astrophysical topics. Particularly, I am passionate about applying modern data science and machine learning techniques to astrophysical problems.
+            </p>
 
-        // Remove shape after animation is complete
-        setTimeout(() => {
-            shape.remove();
-        }, duration * 1000);
-    }
+            <hr class="divider">
 
-    function createFirework() {
-        const firework = document.createElement('div');
-        firework.className = 'firework';
-        firework.style.top = `${Math.random() * 100}vh`;
-        firework.style.left = `${Math.random() * 100}vw`;
+            <p>
+                Additionally to my involvement in the GJO I enjoy running, hiking, paragliding and most outdoor activities. I am both interested in photography and videography, often combining these hobbies with my outdoor adventures and the GJO's activities. For the latter I have edited several videos of our >2h concerts, including a feature-film length movie about our 2018 concert tour in South Africa.
+            </p>
 
-        document.body.appendChild(firework);
+        </div>
+        
+        <!-- Optional: Profile Picture if you want one -->
+        <!-- <div class="profile-img">
+            <img src="images/me.jpg" alt="Profile">
+        </div> -->
+    </div>
+    </section>
 
-        // Remove firework after animation is complete
-        setTimeout(() => {
-            firework.remove();
-        }, 1000);
-    }
 
-    // Create shapes at intervals
-    setInterval(createShape, 1000);
-    // Create fireworks at intervals
-    setInterval(createFirework, 500);
-</script>
+    <script src="cosmos.js"></script>
 </body>
 </html>
