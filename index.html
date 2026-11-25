@@ -3,142 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Julius Gassert - Astrophysics</title>
+    <title>Julius Gassert — Astrophysics</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,700;8..60,800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <!-- Google Fonts for scientific/modern look -->
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;600&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
- 
-    
-    <!-- SEO Essentials -->
-    <meta name="description" content="Personal portfolio of Julius Gassert.">
-    <meta name="keywords" content="Astrophysics, Gravitational Waves, Trumpet, Physics, Research, LMU, CMU, AI in Physics, Multi-messenger Astronomy, Ludwig-Maximilians-Universität, Carnegie Mellon University, Antonella Palmese, Daniel Grün, Grafinger Jugendorchester">
+
+    <!-- SEO -->
+    <meta name="description" content="Julius Gassert — PhD student in astrophysics at LMU Munich (USM), working on gravitational-wave optical follow-up with Wendelstein Observatory and machine learning for GW populations.">
+    <meta name="keywords" content="Julius Gassert, Astrophysics, Gravitational Waves, Wendelstein Observatory, Multi-messenger Astronomy, LMU Munich, USM, Daniel Gruen, Antonella Palmese, Machine Learning, Normalizing Flows, Grafinger Jugendorchester">
     <meta name="author" content="Julius Gassert">
-    
-    <!-- Open Graph (for nice preview cards on Twitter/LinkedIn) -->
-    <meta property="og:title" content="Julius Gassert - Astrophysics Portfolio">
-    <meta property="og:description" content="Exploring the transient universe through gravitational waves.">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Julius Gassert — Astrophysics">
+    <meta property="og:description" content="PhD student in astrophysics at LMU Munich (USM). Gravitational-wave optical follow-up and machine learning for GW populations.">
     <meta property="og:url" content="https://jgassert.github.io/">
+    <meta property="og:type" content="website">
 
-    <meta name="google-site-verification" content="xly3BIsvNJHjGn0B5MEfugQAVPJ0fniyG7s2TJ6tBq8" />
-    
+    <meta name="google-site-verification" content="xly3BIsvNJHjGn0B5MEfugQAVPJ0fniyG7s2TJ6tBq8">
 </head>
-
-</head>
-<body>
-    
-    <!-- Single Canvas for Stars + Merger Event -->
-    <canvas id="cosmos-canvas"></canvas>
-
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-content">
-            <a href="#home" class="logo">🔭🪂🎺</a> 
-            <ul class="links">
-                <li><a href="#research">Research</a></li>
-                <li><a href="#music">Music</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
+<body class="page-landing">
+    <header class="site-header">
+        <nav class="nav-inner" aria-label="Main navigation">
+            <a href="index.html" class="site-brand">jgassert <span class="brand-emojis" aria-hidden="true">🔭🪂🎺</span></a>
+            <ul class="nav-links">
+                <li><a href="index.html" aria-current="page">Home</a></li>
+                <li><a href="about.html">About</a></li>
             </ul>
-        </div>
-    </nav>
+        </nav>
+    </header>
 
-    <section id="home" class="hero-section">
-        <div class="hero-text">
-            <h1>Julius Gassert</h1>
-            <p class="tagline">Exploring the transient universe through <br>gravitational waves and multi-messenger astronomy.</p>
-        </div>
-    </section>
+    <main class="landing-main">
+        <div class="landing-container">
+            <h1 class="landing-name">Julius Gassert</h1>
+            <p class="landing-role">PhD Student in Astrophysics · University Observatory Munich (USM / LMU)</p>
 
-    <!-- Research Section -->
-    <section id="research" class="content-section">
-        <h2>Research</h2>
-        <div class="grid">
-            <div class="card">
-                <h3>Optical Transient/Gravitational Wave Follow-Up</h3>
-                <p>Rapid follow-up campaigns for gravitational wave events and other transients to identify electromagnetic counterparts.</p>
-                <img src="imgs/S240615dg.png" alt="Pointing Plot of S240615dg" style="width: 100%; height: auto; border-radius: 8px;">
-                <div class="card-links">
-                    <p>Some publications that I have contributed to include:</p>
-                    <a href="https://iopscience.iop.org/article/10.3847/2041-8213/adfd49" target="_blank" class="icon-link">
-                        <span>📝 Kilonova Constraints for the LIGO/Virgo/KAGRA Neutron Star Merger Candidate S250206dm: GW-MMADS Observations</span>
-                    </a>
-                    <a href="https://arxiv.org/abs/2507.00357" target="_blank" class="icon-link">
-                        <span>📝 LIGO/Virgo/KAGRA neutron star merger candidate S250206dm: Zwicky Transient Facility observations</span>
-                    </a>
-                    <a href="https://arxiv.org/abs/2510.24620v1" class="icon-link">
-                        <span>📝 AT2025ulz and S250818k: Investigating early time observations of a subsolar mass gravitational-wave binary neutron star merger candidate</span>
-                    </a>
-                    <a href="https://arxiv.org/abs/2510.23723" class="icon-link">
-                        <span>📝 AT2025ulz and S250818k: Leveraging DESI spectroscopy in the hunt for a kilonova associated with a sub-solar mass gravitational wave candidate</span>
-                    </a>
-                    <a href="https://arxiv.org/abs/2512.10239" class="icon-link">
-                        <span>📝 EP250827b/SN 2025wkm: An X-ray Flash-Supernova Powered by a Central Engine and Circumstellar Interaction</span>
-                    </a>
-                    <p>We also publish some rapid updates about observations as <a href="https://gcn.nasa.gov/circulars?view=index&query=Julius+Gassert&startDate=&endDate=" target="_blank" class="icon-link">GCN Circulars</a>.</p>
-                </div>
+            <p class="landing-bio">
+                I am a PhD student in <strong>Daniel Gruen's</strong> group at Ludwig-Maximilians-Universität München.
+                My work focuses on optical follow-up of gravitational-wave events with the 2m Fraunhofer Telescope at
+                <strong>Wendelstein Observatory</strong>, as well as machine learning methods for gravitational-wave
+                population inference.
+            </p>
+
+            <hr class="rule">
+
+            <p class="meta-label">Research Keywords</p>
+            <ul class="keywords-list">
+                <li>Gravitational-Wave Follow-up</li>
+                <li>Wendelstein Observatory</li>
+                <li>Optical Transients</li>
+                <li>Multi-Messenger Astronomy</li>
+                <li>GW Populations</li>
+                <li>Machine Learning in Physics</li>
+            </ul>
+
+            <hr class="rule">
+
+            <p class="meta-label">Links</p>
+            <div class="links-grid">
+                <a class="link-item primary-link" href="https://ui.adsabs.harvard.edu/search/q=author%3A%22%5EGassert%2C%20Julius%22%20OR%20author%3A%22Gassert%2C%20Julius%22&sort=score%20desc%2C%20date%20desc" target="_blank" rel="noopener">
+                    <span class="link-title">Publications (NASA ADS)</span>
+                    <span class="link-note">all papers ↗</span>
+                </a>
+                <a class="link-item" href="about.html">
+                    <span class="link-title">About &amp; Research</span>
+                    <span class="link-note">more →</span>
+                </a>
+                <a class="link-item" href="https://github.com/jgassert" target="_blank" rel="noopener">
+                    <span class="link-title">GitHub</span>
+                    <span class="link-note">jgassert ↗</span>
+                </a>
+                <a class="link-item" href="https://gcn.nasa.gov/circulars?view=index&query=Julius+Gassert&startDate=&endDate=" target="_blank" rel="noopener">
+                    <span class="link-title">GCN Circulars</span>
+                    <span class="link-note">NASA GCN ↗</span>
+                </a>
+                <a class="link-item gjo-link" href="https://grafingerjugendorchester.de" target="_blank" rel="noopener">
+                    <span class="link-title">Grafinger Jugendorchester</span>
+                    <span class="link-note">music ↗</span>
+                </a>
+                <a class="link-item" href="mailto:julius.gassert@campus.lmu.de">
+                    <span class="link-title">Email</span>
+                    <span class="link-note">campus.lmu.de</span>
+                </a>
             </div>
-
-            <div class="card">
-                <h3>Gravitational Wave Transient Catalog Analysis</h3>
-                <p>Understanding the population properties of gravitational wave sources through comprehensive catalog analysis.</p>
-                <img src="imgs/UMAP_groups.png" alt="Groups in Gravitational Wave Transient Catalog" style="width: 100%; height: auto; border-radius: 8px;">
-                
-                <div class="card-links">
-                <p>Some publications that I have contributed to include:</p>
-                    <a href="https://arxiv.org/abs/2603.06566" class="icon-link">
-                        <span>📝 Data-Driven Trends and Subpopulations in the Gravitational Wave Binary Black Hole Merger Population with UMAP</span>
-                    </a>
-                </div>
-                
-            </div>
         </div>
-    </section>
+    </main>
 
-    <!-- Music Section -->
-    <section id="music" class="content-section">
-        <h2>Music & Community</h2>
-        <div class="grid">
-            <a href="https://grafingerjugendorchester.de" class="card wide" style="text-decoration: none; color: inherit;">
-                <h3>Grafinger Jugendorchester</h3>
-                <p>I serve as vice president (2. Vorstand) of the Grafinger Jugendorchester e.V., contributing to all sorts of organizational tasks, social media appearance, event planning and more. I actively play the trumpet and tenor drums.</p>
-            </a>
-        </div>
-    </section>
-
-    <section id="about" class="content-section">
-    <div class="about-container">
-        <div class="about-text">
-            <h2>About Me</h2>
-            <p>
-                I am a Master's student at Ludwig-Maximilians-Universität München pursuing the <strong>AI in Physics</strong> Master program, currently working on my Master's thesis research at the Carnegie Mellon University in Pittsburgh, supervised by Prof. Antonella Palmese.
-            </p>
-            <p>
-                During my Bachelor's studies and the following years thereafter, I was involved with optical follow-up of gravitational wave events and other transients as part of a group led by Prof. Daniel Grün at USM/LMU.
-            </p>
-            <p>
-                I am a generally curious and highly motivated individual interested in a broad range of astrophysical topics. Particularly, I am passionate about applying modern data science and machine learning techniques to astrophysical problems.
-            </p>
-
-            <hr class="divider">
-
-            <p>
-                Additionally to my involvement in the GJO I enjoy running, hiking, paragliding and most outdoor activities. I am interested in both photography and videography, often combining these hobbies with my outdoor adventures and the GJO's activities. For the latter I have edited several videos of our >2h concerts, including a feature-film length movie about our 2018 concert tour in South Africa.
-            </p>
-
-        </div>
-        
-    </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="content-section">
-        <h2>Contact</h2>
-        <div class="contact-container">
-            <p>Feel free to reach out!</p>
-            <a href="mailto:julius.gassert@campus.lmu.de" class="email-link">julius.gassert@campus.lmu.de</a>
-        </div>
-    </section>
-
-    <script src="cosmos.js"></script>
+    <footer class="landing-footer">
+        <span>Munich, Germany</span>
+        <a href="https://orcid.org/0009-0008-2754-1946" target="_blank" rel="noopener">ORCID 0009-0008-2754-1946</a>
+    </footer>
 </body>
 </html>
