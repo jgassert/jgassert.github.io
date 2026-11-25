@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About — Julius Gassert</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,700;8..60,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+    <meta name="description" content="About Julius Gassert — research on gravitational-wave follow-up with Wendelstein Observatory, normalizing flows for GW population inference, and music with the Grafinger Jugendorchester.">
+    <meta name="author" content="Julius Gassert">
+</head>
+<body class="page-about">
+    <canvas id="cosmos-canvas" aria-hidden="true"></canvas>
+    <div class="about-scrim" aria-hidden="true"></div>
+
+    <header class="site-header">
+        <nav class="nav-inner" aria-label="Main navigation">
+            <a href="index.html" class="site-brand">jgassert <span class="brand-emojis" aria-hidden="true">🔭🪂🎺</span></a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" aria-current="page">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="about-main">
+        <header class="page-intro">
+            <h1>About</h1>
+            <p>
+                I am a generally curious and highly motivated astrophysicist interested in a broad range of
+                observational and data-driven topics — particularly optical transient follow-up and applying
+                modern machine learning techniques to gravitational-wave data.
+            </p>
+        </header>
+
+        <!-- RESEARCH -->
+        <section class="about-section" id="research">
+            <h2 class="section-heading">Research</h2>
+
+            <div class="timeline">
+                <article class="timeline-item">
+                    <p class="entry-meta">PhD · Present · LMU Munich (USM) · Prof. Daniel Gruen</p>
+                    <h3>O4 Gravitational-Wave Follow-up with Wendelstein Observatory</h3>
+                    <p>
+                        I am currently a PhD student in Prof. Daniel Gruen's group at the University Observatory Munich
+                        (USM / LMU). My main focus is an in-depth analysis of the gravitational-wave events we observed
+                        during the LIGO/Virgo/KAGRA O4 observing run with the 2m Fraunhofer Telescope at Wendelstein
+                        Observatory — mainly targeting binary black hole (BBH) mergers in search of potential
+                        electromagnetic counterparts flaring in active galactic nucleus (AGN) disks.
+                    </p>
+                </article>
+
+                <article class="timeline-item">
+                    <p class="entry-meta">Master's Thesis · LMU Munich &amp; Carnegie Mellon University · Prof. Antonella Palmese</p>
+                    <h3>Gravitational-Wave Populations &amp; Machine Learning</h3>
+                    <p>
+                        For my Master's in the <strong>AI in Physics</strong> program at LMU Munich, I conducted my
+                        thesis research at Carnegie Mellon University in Pittsburgh, supervised by Prof. Antonella
+                        Palmese. I worked on gravitational-wave population analysis and machine learning methods aimed
+                        at making population inference more stable and computationally efficient.
+                    </p>
+                    <p>
+                        As part of this work, we developed a normalizing-flow emulator for gravitational-wave detection
+                        probability in O4 to reduce the Monte Carlo variance and cost of selection-effect estimation,
+                        alongside data-driven UMAP analyses of binary black hole subpopulations in gravitational-wave
+                        transient catalogs.
+                    </p>
+                    <div class="inline-links">
+                        <a href="https://arxiv.org/abs/2610.00306" target="_blank" rel="noopener">Paper on arXiv (2610.00306) ↗</a>
+                        <a href="https://github.com/jgassert/graviflows" target="_blank" rel="noopener">Code on GitHub (graviflows) ↗</a>
+                        <a href="https://arxiv.org/abs/2603.06566" target="_blank" rel="noopener">UMAP BBH Populations (arXiv:2603.06566) ↗</a>
+                    </div>
+                </article>
+
+                <article class="timeline-item">
+                    <p class="entry-meta">Bachelor's Thesis &amp; Early Follow-up · LMU Munich (USM) · Prof. Daniel Gruen</p>
+                    <h3>Target Selection &amp; Data Reduction at Wendelstein</h3>
+                    <p>
+                        My involvement in optical follow-up of gravitational-wave events and other transients started
+                        with my Bachelor's thesis in Daniel Gruen's group at USM/LMU and continued in the years
+                        following. During that time, I worked on rapid target selection for follow-up campaigns and
+                        data reduction for observations taken at Wendelstein Observatory, including observations
+                        contributing to multi-facility studies of sub-solar mass / candidate superkilonova triggers
+                        such as AT2025ulz (S250818k) and S251112cm.
+                    </p>
+                    <div class="inline-links">
+                        <a href="https://arxiv.org/abs/2510.24620" target="_blank" rel="noopener">Hall, Busmann et al. — AT2025ulz / S250818k (2510.24620) ↗</a>
+                        <a href="https://arxiv.org/abs/2510.23723" target="_blank" rel="noopener">Hall et al. — AT2025ulz DESI (2510.23723) ↗</a>
+                        <a href="https://arxiv.org/abs/2605.10940" target="_blank" rel="noopener">Hall, Ahumada, Gassert et al. — S251112cm (2605.10940) ↗</a>
+                    </div>
+                </article>
+            </div>
+
+            <div class="research-subsection">
+                <h3 class="subsection-title">High-Energy &amp; Optical Transient Follow-up</h3>
+                <p>
+                    Beyond gravitational-wave triggers, I regularly contribute Wendelstein observations and data
+                    reduction to broader follow-up campaigns of high-energy and optical transients — including
+                    gamma-ray bursts (GRBs), Einstein Probe fast X-ray transients, and unusual supernovae — in
+                    collaborative studies led by Brendan O'Connor, Malte Busmann, and colleagues.
+                </p>
+                <div class="inline-links">
+                    <a href="https://arxiv.org/abs/2606.17170" target="_blank" rel="noopener">O'Connor, Busmann et al. — EP250302a (2606.17170) ↗</a>
+                    <a href="https://arxiv.org/abs/2606.09992" target="_blank" rel="noopener">O'Connor, Hall, Busmann et al. — EP260321a (2606.09992) ↗</a>
+                    <a href="https://arxiv.org/abs/2605.18973" target="_blank" rel="noopener">O'Connor, Busmann et al. — GRB 260310A (2605.18973) ↗</a>
+                    <a href="https://arxiv.org/abs/2603.15899" target="_blank" rel="noopener">O'Connor et al. — SN 2025adpq (2603.15899) ↗</a>
+                    <a href="https://arxiv.org/abs/2512.10239" target="_blank" rel="noopener">Srinivasaragavan et al. — EP250827b (2512.10239) ↗</a>
+                </div>
+            </div>
+
+            <div class="records-bar">
+                <span>Full Record</span>
+                <div class="records-links">
+                    <a href="https://scixplorer.org/search?ads_compat=1&d=general&fq=%7B%21type%3Daqp+v%3D%24fq_range%7D&fq_range=(year%3A2022-2026)&fromADS=True&p=1&q=author%3A%22%5EGassert%2C+Julius%22+OR+author%3A%22Gassert%2C+Julius%22&sort=score+desc&sort=date+desc" target="_blank" rel="noopener">All Publications on NASA ADS ↗</a>
+                    <a href="https://gcn.nasa.gov/circulars?view=index&query=Julius+Gassert&startDate=&endDate=" target="_blank" rel="noopener">GCN Circulars ↗</a>
+                    <a href="https://github.com/jgassert" target="_blank" rel="noopener">GitHub ↗</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- MUSIC & BEYOND PHYSICS -->
+        <section class="about-section" id="beyond">
+            <h2 class="section-heading">Music &amp; Beyond Physics</h2>
+
+            <div class="prose-block">
+                <h3 class="subsection-title">Grafinger Jugendorchester</h3>
+                <p>
+                    I serve as vice president (<em>2. Vorstand</em>) of the
+                    <a href="https://grafingerjugendorchester.de" target="_blank" rel="noopener">Grafinger Jugendorchester e.V.</a>,
+                    contributing to all sorts of organizational tasks,
+                    <a href="https://www.instagram.com/grafingerjugendorchester/" target="_blank" rel="noopener">social media appearance</a>,
+                    event planning and more.
+                    I actively play the trumpet and tenor drums.
+                </p>
+            </div>
+
+            <div class="photo-diptych">
+                <div class="photo-frame photo-primary">
+                    <img src="imgs/trumpet.jpg" alt="Julius Gassert playing trumpet on stage" loading="lazy">
+                </div>
+                <div class="photo-frame photo-secondary">
+                    <img src="imgs/tenor-drums.jpg" alt="Julius Gassert playing tenor drums with the Grafinger Jugendorchester" loading="lazy">
+                </div>
+            </div>
+
+            <div class="prose-block">
+                <h3 class="subsection-title">Outdoors, Photography &amp; Videography</h3>
+                <p>
+                    Additionally to my involvement in the GJO I enjoy running, hiking, paragliding and most outdoor
+                    activities. I am interested in both photography and videography, often combining these hobbies
+                    with my outdoor adventures and the GJO's activities. For the latter I have edited several multi-cam videos
+                    of our &gt;2h concerts, including a feature-film length movie about our 2018 concert tour in
+                    South Africa.
+                </p>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section class="about-section about-contact" id="contact">
+            <h2 class="section-heading">Contact</h2>
+            <div class="contact-row">
+                <div>
+                    <p class="contact-lead">Feel free to reach out!</p>
+                    <a class="contact-email" href="mailto:julius.gassert@campus.lmu.de">julius.gassert@campus.lmu.de</a>
+                </div>
+                <div class="contact-meta">
+                    Universitäts-Sternwarte München (USM), LMU<br>
+                    <a href="https://orcid.org/0009-0008-2754-1946" target="_blank" rel="noopener">ORCID 0009-0008-2754-1946</a>
+                    ·
+                    <a href="https://grafingerjugendorchester.de" target="_blank" rel="noopener">GJO</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="cosmos.js"></script>
+</body>
+</html>
